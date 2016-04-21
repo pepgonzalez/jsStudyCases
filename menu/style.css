@@ -7,7 +7,11 @@ a{
 }
 
 .header{
-	background-color: black;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	background-color: rgba(0,0,0, 0.5);
 	color:white;
 }
 
@@ -33,15 +37,18 @@ a{
 	}
 		.nav_ul_li{
 			display: inline-block;
-			background-color: rgba(255,255,255, 0.7);
 		}
 			.nav_ul_li a{
 				font-size: 1rem;
 				display: inline-block;
 				padding: 5px 10px;
-				border:solid red 1px;
 			}
 
+.main{
+	background-color: red;
+	min-height: 500px;
+	padding-top: 26px;
+}
 
 @media screen and (max-width: 320px) {
 	.nav{
