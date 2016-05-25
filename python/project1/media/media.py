@@ -16,7 +16,7 @@ class Movie(Media):
 class Serie(Media):
     """Concrete class for TV Serie"""
     def __init__(self, name, sinopsis, poster, trailer, seasons, tv):
-        Media.__init__(name, sinopsis, poster, trailer)
+        Media.__init__(self, name, sinopsis, poster, trailer)
         self.seasons = seasons
         self.tv = tv
         
